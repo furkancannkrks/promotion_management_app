@@ -1,0 +1,29 @@
+@use "./variables" as *;
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: $spacing-md;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $spacing-md;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.content-card {
+  padding: $spacing-md;
+  border-radius: $radius-default;
+}

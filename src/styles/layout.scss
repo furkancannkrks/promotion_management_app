@@ -1,0 +1,58 @@
+@use "./variables" as *;
+
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  height: $header-height;
+  padding: 0 $spacing-md;
+}
+
+.app-header__logo {
+  flex: 0 0 auto;
+  margin: 0;
+  color: #fff;
+  line-height: $header-height;
+}
+
+.app-header__nav {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.app-header__menu {
+  min-width: 240px;
+  justify-content: flex-end;
+}
+
+.app-content {
+  min-height: 100vh;
+  padding-top: $header-height;
+  overflow-y: auto;
+}
+
+.app-content__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: $spacing-md;
+}
+
+@media (max-width: 991px) {
+  .app-header {
+    padding: 0 $spacing-sm;
+  }
+
+  .app-content__inner {
+    padding: $spacing-sm;
+  }
+}
